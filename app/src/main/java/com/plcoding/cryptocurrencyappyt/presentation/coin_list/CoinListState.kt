@@ -1,3 +1,9 @@
-package com.plcoding.cryptocurrencyappyt.presentation.coin_list.components
+package com.plcoding.cryptocurrencyappyt.presentation.coin_list
 
-data class CoinListState()
+import com.plcoding.cryptocurrencyappyt.domain.model.Coin
+
+class CoinListState(
+    val isLoading: Boolean = false,
+    val coins: List<Coin> = emptyList(),
+    val error: String = ""
+)
